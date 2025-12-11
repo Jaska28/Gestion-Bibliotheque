@@ -20,8 +20,15 @@ def ajouter_livre(titre : str, auteur : str):
     bibliotheque.append(livre)
     print(f"Le livre {titre} a été ajouté avec succès !")
 
+
 def afficher_livres():
-    pass
+    if not bibliotheque:
+        print("La bibliothèque est vide.")
+    else:
+        print("Liste des livres:")
+        for i, livre in enumerate(bibliotheque, 1):
+            print(f"{i}. {livre['titre']} par {livre['auteur']}")
+
 
 def rechercher_livre(titre):
     pass
