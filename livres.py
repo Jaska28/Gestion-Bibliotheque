@@ -31,4 +31,16 @@ def afficher_livres():
 
 
 def rechercher_livre(titre):
-    pass
+    """Recherche un livre par son titre dans la bibliothèque.
+
+    - titre : chaîne à chercher
+    - Retourne le livre (dict) si trouvé, sinon None.
+    """
+    for livre in bibliotheque:
+        # On suppose que les clés sont 'titre' et 'auteur'
+        if livre["titre"].lower() == titre.lower():
+            print(f"Livre trouvé : {livre['titre']} - {livre['auteur']}")
+            return livre
+
+    print(f"Aucun livre trouvé avec le titre : {titre}")
+    return None
