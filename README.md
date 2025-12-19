@@ -13,7 +13,7 @@
  
 1. git clone [https://github.com/Jaska28/Gestion-Bibliotheque.git]
 2. cd Gestion-Bibliothèque
-3. python main.py
+3. livres.py
  
 ## Fonctionnalités
  
